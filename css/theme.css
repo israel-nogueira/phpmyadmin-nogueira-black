@@ -178,6 +178,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -196,6 +197,9 @@ nav,
 section {
   display: block;
 }
+
+
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -206,6 +210,7 @@ body {
   text-align: left;
   background-color: #13161a;
 }
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -8917,7 +8922,11 @@ body#loginform {
   margin: 1em 0 0 0;
   text-align: center;
 }
-body#loginform h1,
+
+body#loginform h1 {
+  display: none;
+}
+
 body#loginform a.logo {
   display: block;
   text-align: center;
@@ -12025,56 +12034,6 @@ a.active.trigger:hover {
   width: auto;
   margin-right: 6px;
 }
-
-
-input[type="checkbox"] + label {
-  position: relative;
-  padding-left: 30px; /* Ajuste conforme necessário */
-  cursor: pointer;
-  display: inline-block;
-  line-height: 20px; /* Ajuste conforme necessário */
-}
-
-/* Estilo do indicador do checkbox (antes do pseudo-elemento) */
-input[type="checkbox"] + label::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px; /* Largura do indicador do checkbox */
-  height: 20px; /* Altura do indicador do checkbox */
-  border: 2px solid #333; /* Cor da borda do indicador do checkbox */
-  background-color: #fff; /* Cor de fundo do indicador do checkbox */
-}
-
-/* Estilo do indicador do checkbox quando marcado */
-input[type="checkbox"]:checked + label::before {
-  background-color: #009688; /* Cor de fundo quando marcado */
-  border-color: #009688; /* Cor da borda quando marcado */
-}
-
-/* Estilo do indicador do checkbox quando hover */
-input[type="checkbox"] + label:hover::before {
-  border-color: #555; /* Cor da borda quando hover */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .rte_table .routine_params_table {
