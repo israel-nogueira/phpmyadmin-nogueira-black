@@ -4,5 +4,5 @@
     "description": "Tema escuro para phpMyAdmin",
     "author": "",
     "url": "",
-    "supports": ["5.0", "5.1"]
+    "supports": ["5.0", "5.1", "5.2"]
 }
