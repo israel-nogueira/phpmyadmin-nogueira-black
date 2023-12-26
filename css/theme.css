@@ -4223,6 +4223,7 @@ input[type="button"].btn-block {
 }
 .navbar-light .navbar-nav .nav-link {
   color: #ababab;
+  font-weight: 300;
 }
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
@@ -5167,13 +5168,16 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #101318;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
   outline: 0;
 }
+
+
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -5194,7 +5198,7 @@ a.close.disabled {
   align-items: flex-start;
   justify-content: space-between;
   padding: 0.4rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #2c343c;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -11331,6 +11335,11 @@ a.close_gis_editor {
   margin-left: 0.75em;
   border-left: 1px solid #666;
 }
+
+#pma_navigation #pmalogo {
+  display: none;
+}
+
 #pma_navigation #pmalogo,
 #pma_navigation #serverChoice,
 #pma_navigation #navipanellinks,
@@ -11348,6 +11357,10 @@ a.close_gis_editor {
 }
 #pma_navigation #navipanellinks .icon {
   margin: 0;
+}
+
+#navipanellinks a {
+  padding: 3%;
 }
 #pma_navigation #recentTable,
 #pma_navigation #favoriteTable {
@@ -13107,7 +13120,7 @@ textarea#sqlquery {
   vertical-align: -3px;
 }
 .navbar-nav .nav-item {
-	background: linear-gradient(#2e363f, #20252b);
+	background: linear-gradient(#262d35, #20252b);
     border-right: 1px solid #13161a;
     border-left: 1px solid #353a41;
     border-bottom: 1px solid #20252b;
@@ -13283,8 +13296,9 @@ textarea#sqlquery {
   display: block;
   margin-left: -20px;
 }
+
 .modal-header {
-  background-image: linear-gradient(#f8f8f8, #d8d8d8);
+  background-image: linear-gradient(#2e363f, #21262c);
 }
 
 .ui-widget-content {
